@@ -48,6 +48,10 @@ Creates a new branch
 
 Switches to the specified branch and updates the working directory  
 
+> git branch -D name_of_branch  
+
+Removes name_of_branch
+
 > git merge [branch]  
 
 Combines the specified branch’s history into the current branch
@@ -103,3 +107,13 @@ Delete the most recent commit destroying the work you’ve done
 >git rebase -i HEAD~number_of_commits  
 
 Edit the number_of_commits last commits
+
+### REMOTE BRANCH  
+
+>git remote add origin your_git_repo_url  
+
+Adds a remote repository  
+
+>git remote -v  
+
+List remote repositories
