@@ -1,15 +1,18 @@
-> SET server:name "fido"  
-
-> GET server:name => "fido"
-
 > SET connections 10  
 
-> INCR connections => 11  
-> INCR connections => 12  
+> INCR connections  
+
+11  
+
+> INCR connections 
+
+12  
 
 > DEL connections  
 
-> INCR connections => 1  
+> INCR connections 
+
+1  
 
 > SETNX key value (set key if not exist)  
 
@@ -17,30 +20,48 @@
 
 > EXPIRE resource:lock 120  
 
-> TTL resource:lock => 113  
+> TTL resource:lock
 
-// after 113s  
+ 113  
 
-> TTL resource:lock => -2  
+### After 113s  
+
+> TTL resource:lock
+
+-2  
 
 > TTL something  
-=>  -2 (means the key does not exist anymore)  
-=>  -1 (never will expire)  
+-2 (means the key does not exist anymore)  
+-1 (never will expire)  
 
 > RPUSH friends "Alice" (puts at the end of list -- to the right)  
 > LPUSH friends "Sam" (puts at the begining of list -- to the left)  
 
-> LRANGE friends 0 -1 => 1) "Sam", 2) "Alice", 3) "Bob"  
-> LRANGE friends 0 1 => 1) "Sam", 2) "Alice"  
-> LRANGE friends 1 2 => 1) "Alice", 2) "Bob"  
+> LRANGE friends 0 -1  
+
+1) "Sam", 2) "Alice", 3) "Bob"  
+
+> LRANGE friends 0 1  
+
+1) "Sam", 2) "Alice"  
+
+> LRANGE friends 1 2  
+
+1) "Alice", 2) "Bob"  
 
 > LRANGE friends 0 -1  
 
-> LLEN friends => 3 (returns the current length of the list)  
+> LLEN friends  
 
-> LPOP friends => "Sam" (removes the first element from the list)  
+3 (returns the current length of the list)  
 
-> RPOP friends => "Bob" (removes the last element of the list)  
+> LPOP friends  
+
+"Sam" (removes the first element from the list)  
+
+> RPOP friends  
+
+"Bob" (removes the last element of the list)  
 
 > SADD douglas "name" (Adds value "name" to the set "douglas")  
 > SADD douglas "website"  
@@ -56,8 +77,12 @@
 2) "name"  
 
 > SISMEMBER key member  
-> SISMEMBER douglas website => 1 (if element is a member of the set)  
-> SISMEMBER douglas city => 0 (if the element is not a member of the set or if the key does not exist)  
+> SISMEMBER douglas website
+
+1 (if element is a member of the set)  
+> SISMEMBER douglas city  
+
+0 (if the element is not a member of the set or if the key does not exist)  
 
 > SUNION key1 key2 ... keyN (union result from the keys passed)  
 
@@ -108,9 +133,12 @@
 > HSET user:1000 email "john.smith@example.com"  
 > HSET user:1000 password "s3cret"  
 
-> HGET user:1000 name => "John Smith"  
+> HGET user:1000 name  
+
+"John Smith"  
 
 > HGETALL user:1000  
+
 1) "name"  
 2) "John Smith"  
 3) "email"  
@@ -122,10 +150,16 @@
 
 > HSET user:1000 visits 10  
 
-> HINCRBY user:1000 visits 1 => 11  
+> HINCRBY user:1000 visits 1  
 
-> HINCRBY user:1000 visits 10 => 21  
+11  
+
+> HINCRBY user:1000 visits 10  
+
+21  
 
 > HDEL user:1000 visits  
 
-> HINCRBY user:1000 visits 1 => 1  
+> HINCRBY user:1000 visits 1  
+
+1  
