@@ -11,6 +11,7 @@ In this repository you can find my own annotations that I use to check in my dai
 [Redis CLI Commands](redis/RedisCLI_Commands.md)  
 [Git CLI Commands](git/GitCLI_Commands.md)  
 [MySQL CLI Commands](mysql/MySQLCLI_Commands.md)  
+[Linux+ CLI Commands](linux/LinuxCLI_Commands.md)  
 
 #### Templates
 [.gitignore](git/.gitignore_Template)  
