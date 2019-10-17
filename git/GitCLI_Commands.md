@@ -92,6 +92,10 @@ Shows content differences between two branches
 
 > git show [commit]  
 
+> git reflog  
+
+This displays the reflog for the local repository.
+
 Outputs metadata and content changes of the specified commit
 
 ### MODIFY COMMITS  
@@ -112,6 +116,8 @@ Edit the number_of_commits last commits
 > git commit --amend  
 
 Combines staged changes with previous commit
+
+> git commit --amend -m "an updated commit message"
 
 ### REMOTE BRANCH  
 
