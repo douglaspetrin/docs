@@ -108,6 +108,11 @@ Delete the most recent commit destroying the work you’ve done
 
 Edit the number_of_commits last commits
 
+
+> git commit --amend  
+
+Combines staged changes with previous commit
+
 ### REMOTE BRANCH  
 
 >git remote add origin your_git_repo_url  
