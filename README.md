@@ -17,6 +17,9 @@ In this repository you can find my own annotations that I use to check in my dai
 #### Templates
 [.gitignore](git/.gitignore_Template)  
 
+#### Examples  
+[bash](bash/bashExamples.sh)  
+
 
 ---
 ### ABOUT ME  
