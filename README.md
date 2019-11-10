@@ -21,6 +21,10 @@ In this repository you can find my own annotations that I use to check in my dai
 [bash](bash/bashExamples.sh)  
 
 
+#### Examples
+[bash](bash/bashExamples.sh)  
+
+
 ---
 ### ABOUT ME  
 Douglas Petrin  
