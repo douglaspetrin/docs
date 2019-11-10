@@ -1,15 +1,15 @@
 
 ### # BASIC  
 
-docker-compose start
-docker-compose stop
+docker-compose start  
+docker-compose stop  
 
-docker-compose pause
-docker-compose unpause
+docker-compose pause  
+docker-compose unpause  
 
-docker-compose ps
-docker-compose up
-docker-compose down
+docker-compose ps  
+docker-compose up  
+docker-compose down  
 
 
 ### # COMPOSE
@@ -19,20 +19,20 @@ docker-compose up -d
 
 ### # IMAGES
 
-docker rmi -f $(docker images -q)
-docker rmi $(docker images -aq -f 'dangling=true')
-docker image prune
+docker rmi -f $(docker images -q)  
+docker rmi $(docker images -aq -f 'dangling=true')  
+docker image prune  
 
 
-docker-compose down -v --rmi all --remove-orphans
+docker-compose down -v --rmi all --remove-orphans  
 
 ### # CONTAINER  
 
 docker container ls
-docker inspect container_Id | grep IPAddress
-docker kill container_id
-docker exec -it container_id bash
-docker container prune
+docker inspect container_Id | grep IPAddress  
+docker kill container_id  
+docker exec -it container_id bash  
+docker container prune  
 
 
 ### # VOLUMES 
