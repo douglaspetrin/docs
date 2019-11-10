@@ -18,3 +18,4 @@ To Copy the output of id_rsa.pub
 To create an Alias
 
 >alias dcwp='docker-compose exec --user www-data phpfpm wp'
+
