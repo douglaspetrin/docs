@@ -29,3 +29,15 @@ done
 read -p "Enter the path: " path
 
 pullAllRepos $path
+
+
+# rename files by concatening first
+
+function renameFiles() {
+
+for file in $(ls)
+do
+        mv $file caminhaopipa_${file}
+
+done
+}
