@@ -1,7 +1,7 @@
 
-To copy file from A to B logged in B:  
+To copy a folder from A to B logged in B:  
 
->sudo scp username@host.com:/my/path/file.sql /home/ubuntu/  
+>sudo scp A_username@host.com:/my/path/* /B_/home/ubuntu/  
 
 To copy a file from B to A while logged into B:  
 
