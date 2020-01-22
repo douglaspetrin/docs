@@ -128,3 +128,7 @@ Adds a remote repository
 >git remote -v  
 
 List remote repositories
+
+### UPDATE REMOTE SUBMODULES 
+
+> git submodule update --remote
