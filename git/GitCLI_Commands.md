@@ -127,4 +127,8 @@ Adds a remote repository
 
 >git remote -v  
 
-List remote repositories
+List remote repositories  
+
+>git remote remove address-name  
+
+Remove remote address  
